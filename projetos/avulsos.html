@@ -14,6 +14,11 @@
     <!-- Estilos customizados para esse template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <link href="../blog.css" rel="stylesheet">
+    <style>
+      .blog-post ul{
+        list-style: square;
+      }
+    </style>
   </head>
 
   <body>
@@ -54,6 +59,11 @@
 
             <p>Eu chamo de "projetos avulsos" aqueles projetos que desenvolvi enquanto aprendia uma linguagem de programação. Sendo, normalmente, projetos curtos com ideias curtas em mente. Eles podem ser voltados a uma funcionalidade da linguagem, como uma biblioteca, ou um conceito, como por exemplo a OO(Orientação a Objetos).</p>
             <p>Eles estão divididos entre linguagem no meu Github, alguns em Javascript, voltados para o Front-end ou para o Backend com Node.js, outros em Java, voltados principalmente para a sua parte backend.</p>
+            <p>Lista de projetos:</p>
+            <ul>
+              <li><a href="https://github.com/MateusGaldinoLG/Java-Codigos/tree/main/randomizer">Avulsos 1 - Java Randomizer</a></li>
+              <li><a href="https://github.com/MateusGaldinoLG/JavaLoremGenerator">Avulsos 2 - Java Lorem Ipsum Generator</a></li>
+            </ul>
           </div><!-- /.blog-post -->
 
           <div class="blog-post">
@@ -83,6 +93,45 @@
             <p style="color: #6860EA;">Cor printada</p>
             <p>Use o <a href="https://github.com/MateusGaldinoLG/Java-Codigos/tree/main/randomizer" target="_blank">randomizer</a></p>
           </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Avulsos 2 - Lorem Ipsum Generator</h2>
+            <p class="blog-post-meta">Escrito por Mateus Galdino, em 22 de Junho de 2021.</p>
+
+            <p>O Lorem Ipsum Generator, ou gerador de Lorem Ipsum, é um projeto bem simples feito em Java. Ele é menor em funcionalidade que o Randomizer, mas ao mesmo tempo utiliza mais conceitos de pacotes de Java e até de desenvolvimento</p>
+            <p>Ele pode ser exportado a partir do module-info.java da aplicação que quer utilizá-lo. Ao ser instanciado como <em>new LoremIpsumGenerator();</em>, ele pode ser utilizado a partir de três métodos, dependendo de como o usuário queira gerar o Lorem Ipsum.</p>
+            <p>Seus métodos são:</p>
+            <ul>
+                <li>generate(int numPalavras): que gera um lorem com uma quantidade de palavras dada pelo parâmetro</li>
+                <li>generate(int numPalavras, int numParagraph): que gera um lorem em x paragrafos a partir de y palavras totais</li>
+                <li>generateParagraphs(int numPalavras, int palavrasParagraph): que gera uma quantidade de parágrafos, cada um com x palavras, a partir de y palavras totais</li>
+            </ul>
+            <p>Para gerar o Lorem, é utilizado um arquivo .txt dentro do projeto, que é lido pelo File da java.io e retornado na forma de String para o método principal.</p>
+            <p>Vai um exemplo de utilização: </p>
+            <pre><code>
+              module example {
+                //...
+                requires com.generator;
+              }
+
+
+              import com.generator.lorem.LoremIpsumGenerator;
+
+              public class LoremExemplo {
+                public static void main(String[] args) {
+                  int tamanho = 10;
+                  
+                  LoremIpsumGenerator loremIpsumGenerator = new LoremIpsumGenerator();
+                  
+                  String lorem = loremIpsumGenerator.generate(tamanho);
+                  System.out.println(lorem);
+
+                }
+              }
+            </code></pre>
+            <p>Use o <a href="https://github.com/MateusGaldinoLG/JavaLoremGenerator" target="_blank">Lorem Ipsum Generator</a></p>
+          </div><!-- /.blog-post -->
+
 
           <nav class="blog-pagination">
             <a class="btn btn-outline-primary" href="#">Mais antigos</a>
