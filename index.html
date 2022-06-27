@@ -1,228 +1,44 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mateus Galdino">
-    <link rel="icon" href="https://getbootstrap.com.br/favicon.ico">
-
-    <title>Mateus Galdino portfolio</title>
-
-    <!-- Principal CSS do Bootstrap -->
-    <link href="https://getbootstrap.com.br/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Estilos customizados para esse template -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
-    <link href="blog.css" rel="stylesheet">
-  </head>
-
-  <body>
-
-    <div class="container">
-      <header class="blog-header py-3">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-4 pt-1">
-            <a class="text-muted" href="#">Inscrição</a>
-          </div>
-          <div class="col-4 text-center">
-            <a class="blog-header-logo text-dark" href="./index.html">Mateus Galdino</a>
-          </div>
-          <div class="col-4 d-flex justify-content-end align-items-center">
-            <a class="text-muted" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3"><circle cx="10.5" cy="10.5" r="7.5"></circle><line x1="21" y1="21" x2="15.8" y2="15.8"></line></svg>
-            </a>
-            <a class="btn btn-sm btn-outline-secondary" href="https://github.com/MateusGaldinoLG">GitHub</a>
-          </div>
-        </div>
-      </header>
-
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-evenly">
-          <a class="p-2 text-muted" href="./discordbot/discordbot.html">Dungeon bot</a>
-          <a class="p-2 text-muted" href="./projetos/avulsos.html">Projetos Avulsos</a>
-          <a class="p-2 text-muted" href="./sobre/sobre.html">Sobre mim</a>
-        </nav>
-      </div>
-
-      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
-        <div class="col-md-6 px-0">
-          <h1 class="display-4 font-italic">Página de Portfolio de Mateus Galdino</h1>
-          <p class="lead my-3">Veja um pouco sobre meus projetos atuais, com atualizações e informações sobre estudos e avanços na programação.</p>
-          <p class="lead mb-0"><a href="./sobre/sobre.html" class="text-white font-weight-bold">Continue lendo...</a></p>
-        </div>
-      </div>
-
-      <div class="row mb-2">
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2 ">Discord bot</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="#">Versioning</a>
-              </h3>
-              <div class="mb-1 text-muted">22 de Junho</div>
-              <p class="card-text mb-auto">Venha ver as novidades de §classe e §magia na versão 1.2.5 do DungeonBot</p>
-              <a href="./discordbot/versioning.html">Continue lendo</a>
-            </div>
-            <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <strong class="d-inline-block mb-2">Projetos Avulsos</strong>
-              <h3 class="mb-0">
-                <a class="text-dark" href="#">Lorem Ipsum Generator</a>
-              </h3>
-              <div class="mb-1 text-muted">22 de Junho</div>
-              <p class="card-text mb-auto">Veja um pouco sobre o Lorem Ipsum Generator, projeto de Java que criei recentemente usando a biblioteca de IO.</p>
-              <a href="./projetos/avulsos.html">Continue lendo</a>
-            </div>
-            <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <main role="main" class="container">
-      <div class="row">
-        <div class="col-md-8 blog-main">
-          <h3 class="pb-3 mb-4 font-italic border-bottom">
-            O dossiê!
-          </h3>
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">Avulsos 2 - Lorem Ipsum Generator</h2>
-            <p class="blog-post-meta">Escrito por Mateus Galdino, em 22 de Junho de 2021.</p>
-
-            <p>O Lorem Ipsum Generator, ou gerador de Lorem Ipsum, é um projeto bem simples feito em Java. Ele é menor em funcionalidade que o Randomizer, mas ao mesmo tempo utiliza mais conceitos de pacotes de Java e até de desenvolvimento</p>
-            <p>Ele pode ser exportado a partir do module-info.java da aplicação que quer utilizá-lo. Ao ser instanciado como <em>new LoremIpsumGenerator();</em>, ele pode ser utilizado a partir de três métodos, dependendo de como o usuário queira gerar o Lorem Ipsum.</p>
-            <p>Seus métodos são:</p>
-            <ul>
-                <li>generate(int numPalavras): que gera um lorem com uma quantidade de palavras dada pelo parâmetro</li>
-                <li>generate(int numPalavras, int numParagraph): que gera um lorem em x paragrafos a partir de y palavras totais</li>
-                <li>generateParagraphs(int numPalavras, int palavrasParagraph): que gera uma quantidade de parágrafos, cada um com x palavras, a partir de y palavras totais</li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Galdino - Portfolio e mais</title>
+    <script src="https://unpkg.com/petite-vue" defer init></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+          <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+            <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+              <li>
+                <a href="/index.html" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+              </li>
+              <li>
+                  <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projetos</a>
+                </li>
+                <li>
+                  <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                </li>
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contato</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/mateus-galdino-74477820b/" class="py-2 pr-4 pl-3 md:border-0 md:p-0">
+                    <img src="./img/iconmonstr-linkedin-3.svg" alt="linkedin link">
+                </a>
+              </li>
             </ul>
-            <p>Para gerar o Lorem, é utilizado um arquivo .txt dentro do projeto, que é lido pelo File da java.io e retornado na forma de String para o método principal.</p>
-            <p>Vai um exemplo de utilização: </p>
-            <pre><code>
-              module example {
-                //...
-                requires com.generator;
-              }
-
-
-              import com.generator.lorem.LoremIpsumGenerator;
-
-              public class LoremExemplo {
-                public static void main(String[] args) {
-                  int tamanho = 10;
-                  
-                  LoremIpsumGenerator loremIpsumGenerator = new LoremIpsumGenerator();
-                  
-                  String lorem = loremIpsumGenerator.generate(tamanho);
-                  System.out.println(lorem);
-
-                }
-              }
-            </code></pre>
-            <p>Use o <a href="https://github.com/MateusGaldinoLG/JavaLoremGenerator" target="_blank">Lorem Ipsum Generator</a></p>
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">Avulsos 1 - Randomizer</h2>
-            <p class="blog-post-meta">Escrito por Mateus Galdino, em 02 de Maio de 2021.</p>
-
-            <p>Randomizer, ou aleatorizador ou randomizador (em tradução literal), é o primeiro projeto mais integrado que fiz dentro de java. Ele utiliza conceitos do fim do chamado "<em>core-java</em>"(o núcleo de aprendizado da linguagem Java), como os objetos, as Interfaces e algumas bibliotecas do SDK, principalmente a java.util.</p>
-            <p>Ele faz uso do método java.util.Random para criar números aleatórios e utiliza esses números em seus próprios métodos. Atualmente, o objeto Randomizer possui três métodos úteis: </p>
-            <ul>
-                <li>O randomNumber, que utiliza o Random e produz um número dentro de um intervalo dado pelo usuário;</li>
-                <li>O randomArray, que produz um array de números dentro de um intervalo dado pelo usuário;</li>
-                <li>o corHex, que produz um código de cor hexadecimal aleatório para o usuário.</li>
-            </ul>
-            <p>O randomizer já vem com um código de teste onde é apresentado as funcionalidades de cada código e como ele pode ser utilizado dentro de outro projeto. Se for de interesse, o código pode ser utilizado de forma prática, simplesmente ao ser baixado e chamada por randomizer.Randomizer.</p>
-            <pre><code>
-  import randomizer.Randomizer; //importa o randomizer
-
-  public class Teste {
-                    
-    public static void main(String[] args) {
-        Randomizer r = new Randomizer(); //chama ele como objeto
-        System.out.println(r.corHex()); //usa ele para printar uma cor
-    }
-  }
-  //no meu teste, printou #6860EA
-            </code></pre>
-            <p style="color: #6860EA;">Cor printada</p>
-            <p>Use o <a href="https://github.com/MateusGaldinoLG/Java-Codigos/tree/main/randomizer" target="_blank">randomizer</a></p>
-          </div><!-- /.blog-post -->
-
-          <div class="blog-post">
-            <h2 class="blog-post-title">O que é o Dungeon Bot?</h2>
-            <p class="blog-post-meta">Escrito por Mateus Galdino, em 30 de Abril de 2021.</p>
-
-            <p>O Dungeon Bot é um bot voltado para o jogo Dungeons and Dragons 5e, usado na plataforma Discord</p>
-            <hr>
-            <p>O jogo Dungeons and Dragons 5e, ou simplesmente D&D, possui um conjunto de regras bem robusto, indo desde classes até raças e funções próprias de armas e encontros. Sendo um Jogo de <em>Role-playing</em> (RPG), ele ganhou grande espaço em plataformas de conversas online, principalmente no periodo durante e após a pandemia. Nesse contexto, eu fui introduzido ao jogo e amei a primeira vista, ou ao primeiro jogo.</p>
-            <p>Minha mesa já mostrava a necessidade de conseguir acessar os conteúdos de D&D de forma rápida durante o jogo, sem precisar acessar as 300 páginas do livro do jogador(LDJ ou PHB), então, ao começar a programar, decidi começar um projeto de um bot para Discord, usando <strong>node.js</strong> e a biblioteca <strong>Discord.js</strong>, para compactar um conjunto de regras e recomendações em um único lugar mais acessível. </p>
-          </div><!-- /.blog-post -->
-
-          <nav class="blog-pagination">
-            <a class="btn btn-outline-primary" href="#">Mais antigos</a>
-            <a class="btn btn-outline-secondary disabled" href="#">Mais novos</a>
-          </nav>
-
-        </div><!-- /.blog-main -->
-
-        <aside class="col-md-4 blog-sidebar">
-          <div class="p-3 mb-3 bg-light rounded">
-            <h4 class="font-italic">Sobre</h4>
-            <p class="mb-0">Mateus Galdino é um estudante de programação de Recife, voltado principalmente para Javascript, com node.js, e Java, com o core-java e Spring.</p>
           </div>
-
-          <div class="p-3">
-            <h4 class="font-italic">Arquivos</h4>
-            <ol class="list-unstyled mb-0">
-              <li><a href="./discordbot/discordbot.html">Dungeon Bot</a></li>
-              <li><a href="./discordbot/versioning.html">Versioning do Dungeon Bot</a></li>
-              <li><a href="./projetos/avulsos.html">Projetos avulsos</a></li>
-            </ol>
-          </div>
-
-          <div class="p-3">
-            <h4 class="font-italic">Onde me encontrar:</h4>
-            <ol class="list-unstyled">
-              <li><a href="https://github.com/MateusGaldinoLG" target="_blank">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/mateus-galdino-74477820b/" target="_blank">LinkedIn</a></li>
-            </ol>
-          </div>
-        </aside><!-- /.blog-sidebar -->
-
-      </div><!-- /.row -->
-
-    </main><!-- /.container -->
-
-    <footer class="blog-footer">
-      <p>Template de blog construído para o <a href="https://getbootstrap.com/">Bootstrap</a>, pelo <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-        <a href="#">Voltar ao topo</a>
-      </p>
-    </footer>
-
-    <!-- Principal JavaScript do Bootstrap
-    ================================================== -->
-    <!-- Foi colocado no final para a página carregar mais rápido -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/popper.min.js"></script>
-    <script src="https://getbootstrap.com.br/docs/4.1/dist/js/bootstrap.min.js"></script>
-    <script src="https://getbootstrap.com.br/docs/4.1/assets/js/vendor/holder.min.js"></script>
-    <script>
-      Holder.addTheme('thumb', {
-        bg: '#55595c',
-        fg: '#eceeef',
-        text: 'Thumbnail'
-      });
-    </script>
-  </body>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <h1 class="font-bold">Mateus Galdino</h1>
+            <p>Olá, eu sou Mateus. Programador e estudante de programação localizado atualmente em Recife </p>
+        </div>
+    </main>
+</body>
 </html>
